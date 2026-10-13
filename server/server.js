@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const connectDB = require('./config/db');
+const { notFound, errorHandler } = require('./middleware/errorHandler');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -37,6 +38,10 @@ app.get('/api/health', (req, res) => {
 app.get('/', (req, res) => {
   res.send('Freelancer Tracker API is running. Check /api/health for status.');
 });
+
+// 404 & Centralized Error Handlers
+app.use(notFound);
+app.use(errorHandler);
 
 // Start Server
 app.listen(PORT, () => {
