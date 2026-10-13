@@ -813,8 +813,36 @@ textarea.form-control {
     --sidebar-width: 100%;
   }
 
-  h1 { font-size: 1.6rem; }
-  h2 { font-size: 1.3rem; }
+  .sidebar-nav {
+    transform: translateX(-100%);
+  }
+
+  .sidebar-nav.open {
+    transform: translateX(0) !important;
+  }
+
+  .main-layout-content {
+    margin-left: 0 !important;
+  }
+
+  .mobile-hamburger-btn {
+    display: inline-flex !important;
+  }
+
+  .mobile-close-btn {
+    display: inline-flex !important;
+  }
+
+  .top-navbar {
+    padding: 0 1rem !important;
+  }
+
+  .page-main-container {
+    padding: 1rem !important;
+  }
+
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.2rem; }
 
   .stat-grid {
     grid-template-columns: 1fr !important;
