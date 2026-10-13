@@ -41,6 +41,7 @@ app.get('/', (req, res) => {
 
 // API Routes
 app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/clients', require('./routes/clientRoutes'));
 
 // 404 & Centralized Error Handlers
 app.use(notFound);
