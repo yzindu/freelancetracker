@@ -1,0 +1,6 @@
+/* FreelancePulse - Specific Component Level Overrides */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--bg-body);
+}

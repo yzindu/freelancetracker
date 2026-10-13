@@ -44,6 +44,7 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/clients', require('./routes/clientRoutes'));
 app.use('/api/projects', require('./routes/projectRoutes'));
 app.use('/api/payments', require('./routes/paymentRoutes'));
+app.use('/api/dashboard', require('./routes/dashboardRoutes'));
 
 // 404 & Centralized Error Handlers
 app.use(notFound);
