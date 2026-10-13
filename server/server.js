@@ -39,6 +39,9 @@ app.get('/', (req, res) => {
   res.send('Freelancer Tracker API is running. Check /api/health for status.');
 });
 
+// API Routes
+app.use('/api/auth', require('./routes/authRoutes'));
+
 // 404 & Centralized Error Handlers
 app.use(notFound);
 app.use(errorHandler);
